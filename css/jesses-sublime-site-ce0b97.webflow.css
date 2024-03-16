@@ -164,6 +164,15 @@ a {
   width: 100%;
 }
 
+.paragraph {
+  max-width: 500px;
+  color: #46484c;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-style: italic;
+}
+
 @media screen and (min-width: 1440px) {
   .d--100 {
     font-size: 8.4rem;
