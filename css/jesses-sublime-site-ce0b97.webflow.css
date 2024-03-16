@@ -121,6 +121,7 @@ a {
 
 .cs-img-wrap {
   width: 100%;
+  height: 350px;
   max-width: 21rem;
   margin-left: auto;
   margin-right: auto;
@@ -173,14 +174,39 @@ a {
   font-style: italic;
 }
 
+@media screen and (min-width: 1280px) {
+  .cs-img-wrap {
+    height: 350px;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .d--100 {
     font-size: 8.4rem;
     line-height: .85;
   }
 
+  .cs-middle {
+    overflow: visible;
+  }
+
   .cs-img-wrap {
+    height: 470px;
     max-width: 28rem;
+  }
+
+  .cs-bot {
+    z-index: 9999999;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    flex-flow: column;
+    align-items: stretch;
+    position: relative;
   }
 
   .cs-page-title.postion--top {
@@ -189,6 +215,22 @@ a {
 
   .cs-page-title.position-bot {
     bottom: -10rem;
+  }
+
+  .image {
+    z-index: 99999;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .cs-img-wrap {
+    height: 470px;
+    overflow: visible;
+  }
+
+  .cs-slider {
+    height: 70%;
   }
 }
 
@@ -239,6 +281,7 @@ a {
   }
 
   .cs-img-wrap {
+    height: 286px;
     max-width: 17rem;
   }
 
